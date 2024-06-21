@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+        <h1><img src="img/fm-logo.webp" alt="circle logo green background with cream wheat stalk over brown red yellow field rows farmer's market springdale, vt"></h1>
+     <nav class="nav">
+        <ul>                
+            <li class="navlink"><a href="index.html">Home</a></li>
+            <li class="navlink"><a href="https://www.google.com/maps/place/Springfield+Farmers+Market/@43.2837953,-72.4707262,15z/data=!4m6!3m5!1s0x89e1b90ad22004a3:0x3a2a908d2c54deda!8m2!3d43.2837953!4d-72.4707262!16s%2Fg%2F11df3r0rc6?entry=ttu" target="_blank">Location</a></li>
+            <li class="navlink"><a href="https://www.emerald.com/insight/content/doi/10.1108/09590559610119910/full/html" target="_blank">Vendors</a></li>
+            <li class="navlink"><a href="https://www.komando.com/" target="_blank">Newsletter</a></li>
+            <li class="navlink"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <button onclick="showHamburger()" class="hamburger-menu">
+        <i class="fa fa-bars"></i>
+    </button>
+  </header>
+</header>
+   <div class="banner-containter">
+    <div class="banner">
+    <div class="banner-image">
+        <div class="content-banner-text">
+          <h2>We would love to hear from you!</h2>
+          <p>Please fill out the form below and we will get back to you within 72 hours</p>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="contact-page-grid-container">
+    <form action="" method="get" id="form">
+        <div class="contact-page-form-wrapper">
+            <p class="required">*Required</p>
+            <div class="customer-info">
+                <div class="customer-input-wrapper">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="customer-input-wrapper">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            	<fieldset class="info-request">
+                    <legend> How can we help?</legend>
+                    <div class="option1">
+                        <input type="checkbox" id="option1" value="optoin1" name="employment">
+                        <label class="light" for="option1">Employment</label>
+                    </div>
+                    <div class="option2">
+                        <input type="checkbox" id="option2" value="option2" name="wholesale-coffee">
+                        <label class="light" for="option2">Become a Vendor</label>
+                    </div>
+                    <div class="option3">
+                        <input type="checkbox" id="option3" value="option3" name="art-shows">
+                        <label class="light" for="option3">Local Classes</label>
+                    </div>
+                </fieldset>
+                <div class="contact-page-comments">
+                    <label for="comment">Comment</label>
+                    <textarea rows="4" cols="30" name="comment" form="usrform">Enter text here...</textarea>
+                </div>
+            </div>
+            <div class="conact-page-button-wrapper">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+</div>
+    <footer>
+      <p>&copy;  2024 Springdale Farmer's Market Association. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <script src="js/node.js"></script>
+</body>
+</html>

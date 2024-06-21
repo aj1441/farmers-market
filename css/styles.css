@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ovo&display=swap');
+
+.nunito-sans {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+  }
+
+  .ovo-regular {
+    font-family: "Ovo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+:root {
+  --black: #000000;
+  --Pine: #4c7031;
+  --Ironstone: #824737;
+  --Rust:#b55232;
+  --Carrot: #f49619;
+  --Cream: #fff0cb;
+  --White: #ffffff;
+}
+body {
+  font-family: "Nunito Sans";
+  font-size: 1.1rem;
+  line-height: 1.1667;
+  font-weight: normal;
+  margin: 0;
+}
+header {
+    background-color: var(--Cream);
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .5rem var(--Rust) double;
+}
+header ul {
+    list-style: none; 
+}
+h1 {
+    font-family: "Ovo";
+    margin: 0;
+  }
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+a {
+    text-decoration: none;
+    color: var(--Pine);
+  }
+.button2 {
+    background-color: var(--Pine);
+    color: var(--White);
+    border-radius: 8px;
+    padding: .25rem .5rem;
+  }
+  .button2:hover {
+    background-color: var(--Carrot);
+    color: var(--black);
+  }
+  h2 {
+    font-family: "Ovo";
+    font-size: 2.5rem;
+    font-weight: normal;
+    text-align: center;
+    margin: auto;
+    color: var(--Rust);
+    /* text-shadow: .5px .5px .5px var(--black); */
+    /* border-top: 2px var(--Carrot) solid; */
+    
+  }
+  h3 {
+    font-family: "Poppins";
+    font-size: 2rem;
+    line-height: 1.1667;
+    font-weight: normal;
+    padding-left: 1rem;
+  }
+  h4 {
+    font-family: "Poppins";
+    font-size: 2.5rem;
+    line-height: 1.1667;
+    font-weight: normal;
+  }
+  p {
+    font-family: "Nunito Sans";
+    font-size: 1.1rem;
+    line-height: 1.1667;
+    font-weight: normal;
+  }
+
+  .banner {
+    height: 200px;
+    background-color: var(--Cream);
+  }
+  .banner-image {
+    background: url(https://images.pexels.com/photos/603030/pexels-photo-603030.jpeg?auto=compress&cs=tinysrgb&w=600);
+    /* filter: grayscale(40%); */
+    /* background-blend-mode: saturation; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  
+  .banner-text {
+    color: var(--Rust);
+    padding: 5rem;
+  }
+  p .banner-text {
+    font-weight: bold;
+    /* text-shadow: .5px .5px .5px var(--black); */
+  }
+
+  .content-banner-text {
+    color: var(--Rust);
+    padding: 4rem;
+  }
+  p .content-banner-text {
+    font-weight: bold;
+    /* text-shadow: .5px .5px .5px var(--black); */
+  }
+  .content-banner-text p {
+    text-align: center;
+  }
+
+  img {
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    /* padding: 1rem; */
+  }
+
+ footer {
+  background-color: var(--Pine);
+  color: var(--Cream);
+  max-width: 100%;
+  max-height: 100%;
+  padding: 3rem;
+  text-align: center;
+  font-size: .25rem;
+ }
+ .contact-page-grid-container {
+  background-color:var(--Carrot);
+  color: #FFFFFF;
+  opacity: .5;
+}
+
+.contact-page-intro {
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+
+}
+.contact-page-grid-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+.contact-page-grid-container p {
+  text-align: center;
+  font-size: 1rem;
+}
+.contact-page-form-wrapper {
+  background-color: #FFFFFF;
+  color:var(--black);
+  max-width: 30%;
+  max-height: 40%;
+  border-radius: 8px;
+  margin: 1rem auto;
+  padding: 2rem;
+}
+form {
+  padding: 1rem;
+}
+.customer-input-wrapper {
+  display: flex;
+  align-content: flex-end;
+  justify-content: space-between;
+  padding: .3rem 0;
+}
+.customer-input-wrapper input {
+  width: 66%;
+  border: 2px solid var(--Carrot);
+  border-radius: 5px;
+}
+.contact-page-form-wrapper .required {
+  text-align: start;
+  font-size: .75rem;
+}
+.info-request {
+  border: none;
+  margin: 1rem 0;
+  align-items: start;
+  padding: 0;
+}
+.contact-page-comments textarea {
+  max-width: 90%;
+  min-width: 90%;
+  border: 2px solid var(--Carrot);
+  border-radius: 5px;
+}
+.conact-page-button-wrapper {
+  display:flex;
+  justify-content: center;
+}
+#submit {
+  background-color: var(--Pine);
+  color: var(--White);
+  border-radius: 4px;
+  margin: .5rem;
+}
+@media (max-width: 699px) {
+   
+    header ul {
+        list-style: none;
+    }
+    .hamburger-menu {
+      display: block;
+      background-color: var(--Rust);
+      opacity: .5;
+      border: none;
+      grid-column: 4/5;
+      height: 30px;
+      width: 30px;
+
+    }
+    .nav {
+      position: absolute;
+      z-index: 1;
+      background: var(--Ironstone);
+      display: none;
+      top: 7rem;
+      width: 50%;
+      height: 38%;
+      justify-content: space-around;
+      transition: all 400ms;
+    }
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+         background: var(--Ironstone);
+      }
+    .nav-active {
+      right: 0;
+      display: block;
+    }
+    .navlink {
+      text-align: center;
+      justify-content: space-around;
+      margin: 1rem;
+      font-size: 25px;
+    }
+    .navlink a {
+      color: var(--Cream)
+    }
+    .grid-container {
+      padding: 1rem;
+    }
+    .content-banner-text {
+      color: var(--Rust);
+      padding: 2.5rem;
+    }
+  }
+@media (min-width: 700px) {
+    .hamburger-menu {
+      display: none;
+    }
+    header {
+      flex-direction: column;
+    }
+    h1 {
+    margin: auto;
+    width: 50%;
+    }
+    .nav {
+      margin: auto;
+      width: 75%;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: space-between;
+    }
+    .card {
+      margin: 1rem;
+    }
+  }
+@media (min-width: 915px) {
+    header {
+      flex-direction: row;
+    }
+    .nav {
+      margin-left: 20%;
+    }
+  }
